@@ -1,0 +1,52 @@
+<!Doctype html> 
+<html> 
+	<head> 
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<title>The Star Thief</title>
+		<script src="script/phaser.js"></script>
+		<script src="script/jquery-3.5.1.min.js"></script>
+		<script src="script/jquery-3.5.1.js"></script>
+		<script src="script/jQuery.min.js"></script>
+		<link rel="stylesheet" href="style/game.css">
+	</head>
+	<body style="background-color:black">
+		<div class="loader">
+			<img class="displayed" src="img/chargement1.gif" align="center">
+		</div>
+		<script class="game" type="text/javascript" src="script/game.js">
+			var config = {
+				scene: {
+					preload: preload
+				}
+			};
+
+			function preload (){
+				this.load.audio('start', 'musik/bruitages/ogg/start.ogg');
+				this.load.audio('back', 'musik/ogg/mix2.ogg');
+				this.load.audio('pieces', 'musik/bruitages/ogg/piece.ogg');
+				this.load.audio('lvlUP', 'musik/bruitages/ogg/lvl_up.ogg');
+				this.load.audio('DMG', 'musik/bruitages/ogg/MinecraftDMG.ogg');
+				this.load.audio('loser', 'musik/bruitages/ogg/game_over.ogg');
+				this.load.image('back', 'img/back/back.jpg');
+				this.load.image('back1', 'img/back/back1.jpg');
+				this.load.image('back2', 'img/back/back2.jpg');
+				this.load.image('back3', 'img/back/back3.jpg');
+				this.load.image('back4', 'img/back/back4.jpg');
+				this.load.image('back5', 'img/back/back5.jpg');
+				this.load.image('back6', 'img/back/back6.jpg');
+				this.load.image('platform2', 'img/platform/platform2.PNG');
+				this.load.image('star', 'img/star.png');
+				this.load.image('bomb', 'img/bombWithoutBG.png');
+				this.load.image('Noheart', 'img/heart/Noheart.png');
+				this.load.image('Oneheart', 'img/heart/Oneheart.png');
+				this.load.image('Twoheart', 'img/heart/Twoheart.png');
+				this.load.image('Fullheart', 'img/heart/Fullheart.png');
+				this.load.image('Home', 'img/BackHome.png');
+				this.load.image('Refresh', 'img/RefreshInGame.png');
+				this.load.spritesheet('dude', 'img/perso/panel1.png', { frameWidth: 32, frameHeight: 32 });	
+			}
+		</script>
+	</body>
+</html>
